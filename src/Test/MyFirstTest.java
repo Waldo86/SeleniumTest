@@ -7,7 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class MyFirstTest {
-    WebDriver driver;
+    private WebDriver driver;
+    private final String BASE_URL = "https://www.facebook.com";
 
 
     @Before
@@ -18,7 +19,7 @@ public class MyFirstTest {
 
     @Test
     public void test(){
-        driver.get("https://www.facebook.com/");
+        driver.get(BASE_URL);
 
     }
 
